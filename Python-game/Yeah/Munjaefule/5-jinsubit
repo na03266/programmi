@@ -1,0 +1,14 @@
+def baccugi(jinsu10):
+    jinsu2 = ""
+    
+    while jinsu10 > 0:
+        namerge = jinsu10 % 2
+        jinsu10 = jinsu10 // 2
+        jinsu2 = str(namerge) + jinsu2
+    return jinsu2
+
+n = int(input("10진수를 입력하세요 : "))
+m = baccugi(n)
+print("2진수로 변환한 결과는 : "+ m)
+
+print("오른쪽 시프트 한번 한 값은 : " + m[:-1] + "입니다")
